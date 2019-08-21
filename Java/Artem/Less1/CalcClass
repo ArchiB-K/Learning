@@ -1,0 +1,11 @@
+public class CalcClass {
+int a = 5;
+int b = 7;
+int c = 7;
+int res = 0;
+
+int CalcClass(){
+    res = a+b+c;
+    return res;
+    }
+}
