@@ -1,0 +1,14 @@
+public class CalcClass {
+int res;
+int sum;
+
+    public int sum(int a, int b, int c){
+        sum = a+b+c;
+        return sum;
+    }
+
+    public int remDiv (int sum){
+       res = sum % 4;
+       return res;
+    }
+}
