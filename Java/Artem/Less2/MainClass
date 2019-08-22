@@ -1,0 +1,7 @@
+public class MainClass {
+    public static void main(String[] args) {
+        CalcClass clc = new CalcClass();
+        int res =  clc.sum(7,8,9);
+        System.out.println("Result = "+clc.remDiv(res));
+    }
+}
