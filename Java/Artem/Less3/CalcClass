@@ -1,0 +1,39 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class CalcClass {
+    int n;
+    int k;
+    boolean check = true;
+    Scanner scr = new Scanner(System.in);
+    //setter, input numbers in klava :)
+    void ent() {
+        do {
+            try {
+                System.out.println("Enter n");
+                n = scr.nextInt();
+                System.out.println("Enter k");
+                k = scr.nextInt();
+                check = false;
+            } catch (InputMismatchException ex) {
+                System.out.println("Erorr! Please reenter...");
+                scr.nextLine();
+            }
+        } while (check);
+    }
+    //getter
+    int getN() {
+        return n;
+    }
+    int getK() {
+        return k;
+    }
+// --------------------------------------------------------------
+    int sum (int a, int b){
+        int ress = 0;
+        for (int i = 0; i < a; i++){
+           ress = ress + (int)(Math.pow(i,b));
+       }
+        return ress;
+    }
+}
