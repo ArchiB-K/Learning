@@ -1,0 +1,10 @@
+public class MainClass {
+
+    public static void main(String[] args) {
+        CalcClass clc = new CalcClass();
+        clc.ent();
+
+        int res = clc.sum(clc.getN(),clc.getK());
+        System.out.println("Res = " + res);
+    }
+}
