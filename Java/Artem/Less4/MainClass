@@ -1,0 +1,13 @@
+public class MainClass {
+    public static void main(String[] args) {
+        CalcClass clc = new CalcClass();
+
+        clc.input();
+
+        int res = clc.expr(clc.getX(),clc.getY());
+
+        System.out.println("Res expr = "+res);
+
+
+    }
+}
