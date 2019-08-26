@@ -22,6 +22,7 @@ public class CalcClass {
             check = false;
         }catch (InputMismatchException ex) {
             System.out.println("Erorr! please reenter date...");
+            scr.nextLine();
         }
     }while (check);
     }
