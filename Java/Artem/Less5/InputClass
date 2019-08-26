@@ -1,0 +1,37 @@
+//Возвести, введенное с клавиатуры число, в степень n,
+//степень тоже вводится с клавиатуры.
+//Возведение в степень организовать с использованием циклов.
+//Примечание: не использовать функцию pow для нахождения степени.
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.io.*;
+import java.util.*;
+
+public class InputClass {
+    int numb;
+    int pow;
+    boolean check;
+    Scanner scr = new Scanner(System.in);
+    //setter
+    public void inp() {
+        do {
+            try {
+                System.out.println("Please enter number...");
+                numb = scr.nextInt();
+                System.out.println("Please enter pow....");
+                pow = scr.nextInt();
+                check = false;
+            } catch (InputMismatchException ex) {
+                System.out.println("Erorr enter date!");
+                scr.nextLine();
+            }
+        } while (check);
+    }
+    //getter
+    public int getNumb(){
+        return numb;
+    }
+    public int getPow(){
+        return pow;
+    }
+}
