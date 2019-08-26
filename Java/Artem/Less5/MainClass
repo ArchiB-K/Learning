@@ -1,0 +1,11 @@
+public class MainClass {
+    public static void main(String[] args) {
+        InputClass inp = new InputClass();
+        CalcClass clc = new CalcClass();
+
+        inp.inp();
+        int res = clc.result(inp.getNumb(),inp.getPow());
+        System.out.println("Result = " + res);
+
+    }
+}
