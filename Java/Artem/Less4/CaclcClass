@@ -1,0 +1,42 @@
+//Вычислить значение выражения по формуле
+//(все переменные принимают действительные значения):
+//(1-tg x)^(ctg x)+ cos(x-y).
+//Ввод x и y осуществить с помощью клавиатуры.
+
+import sun.security.x509.OCSPNoCheckExtension;
+import java.util.*;
+
+public class CalcClass {
+    int x;
+    int y;
+    boolean check = true;
+    //setter
+    public void input () {
+        Scanner scr = new Scanner(System.in);
+        do {
+        try {
+            System.out.println("Please enter x");
+            x = scr.nextInt();
+            System.out.println("Please enter y");
+            y = scr.nextInt();
+            check = false;
+        }catch (InputMismatchException ex) {
+            System.out.println("Erorr! please reenter date...");
+        }
+    }while (check);
+    }
+    //getter
+    public int getX(){
+        return x;
+    }
+    public int getY(){
+        return y;
+    }
+//---------------------------------------------------------
+                    //x       //y
+    public int expr (int a, int b){
+    //(1-tg x)^(ctg x)+ cos(x-y)
+    int res = (int)Math.pow((1-Math.tan(a)),(1/Math.tan(x)))+(int)(Math.cos(x-y));
+    return res;
+    }
+}
